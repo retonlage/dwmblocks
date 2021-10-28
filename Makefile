@@ -5,4 +5,5 @@ output: dwmblocks.c blocks.h
 clean:
 	rm -f *.o *.gch dwmblocks
 install: output
-	cp -f dwmblocks ${PREFIX}/bin
+	mkdir -p ${PREFIX}/bin
+	cp -f dwmblocks ${PREFIX}/bin/dwmblocks
