@@ -5,8 +5,4 @@ output: dwmblocks.c blocks.h
 clean:
 	rm -f *.o *.gch dwmblocks
 install: output
-	mkdir -p /home/tonlage/Puters/bin
-	cp -f dwmblocks /home/tonlage/Puters/bin
-	chmod 755 /home/tonlage/Puters/bin/dwmblocks
-uninstall:
-	rm -f /home/tonlage/Puters/bin/dwmblocks
+	cp -f dwmblocks ${PREFIX}/bin
