@@ -1,4 +1,4 @@
-PREFIX ?= /usr/local
+PREFIX=${out}
 
 output: dwmblocks.c blocks.h
 	cc dwmblocks.c -lX11 -o dwmblocks
