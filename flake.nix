@@ -15,6 +15,7 @@
         src = ./.;
 
         nativeBuildInputs = with pkgs; [
+          xorg.libX11
         ];
       };
     }; in with utils.lib; eachSystem defaultSystems out;
